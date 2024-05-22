@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mock-Test-1</title>
+</head>
+
+<body>
+    <script>
+        //---Answer of question number-1---//
+
+        console.log("Answer of question number-1");
+        let x = 10;
+        let y = 20;
+
+        let z = x;
+        x = y;
+        y = z;
+
+        console.log("x = " + x);
+        console.log("y = " + y);
+
+        //---Answer of question number-2---//
+
+        console.log("Answer of question number-2");
+
+        function calculateArea(radius) {
+            const pi = Math.PI;
+            return pi * radius * radius;
+        }
+
+        const radius = 5;
+        const area = calculateArea(radius);
+        console.log("The area of the circle with radius", radius, "is", area);
+
+        //---Answer of question number-3---//
+
+        console.log("Answer of question number-3");
+
+        function doubleValues(numbers) {
+            return numbers.map(number => number * 2);
+        }
+
+        const numbers = [1, 2, 3, 4, 5];
+        const doubledValues = doubleValues(numbers);
+        console.log("orignal arrey = "+ numbers);
+        console.log("after double = " + doubledValues);
+
+        //---Answer of question number-4---//
+
+        console.log("Answer of question number-4");
+
+        const student = {
+            name: "Rakesh Kumar Saini",
+            age: 33,
+            grade: "First"
+        };
+
+        function getStudentInfo(student) {
+            return `My Name Is ${student.name} and i am ${student.age} years old and i am graduate with ${student.grade} division.`;
+        }
+
+        console.log(getStudentInfo(student));
+
+        //---Answer of question number-5---//
+
+        console.log("Answer of question number-5");
+
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        };
+
+        //---Answer of question number-6---//
+
+        console.log("Answer of question number-6");
+
+        function checkNumber(number) {
+            if (number > 0) {
+                return "positive";
+            } else if (number < 0) {
+                return "negative";
+            } else {
+                return "zero";
+            }
+        }
+        console.log(checkNumber(4));
+        console.log(checkNumber(0));
+        console.log(checkNumber(-4));
+
+        //---Answer of question number-7---//
+
+        console.log("Answer of question number-7");
+
+        function reverseString(str) {
+            return str.split("").reverse().join("");
+        };
+        console.log(reverseString("hello"));
+
+
+    </script>
+</body>
+
+</html>
